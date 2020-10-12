@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-xs-1 mt-5"><h5>Day 5</h5></div>
+        <div class="col-md-6 col-xs-1 mt-5">
+            <!-- ECHOS PLANT HEIGHT -->
+            <h4>Plant Height</h4>
+            <p>{{this.gameService.plant.height}} inches</p>
+            
+        </div>
+        <div class="col-md-3 col-xs-1 mt-5">
+            <!-- LOOPS THROUGH FORM VARIABLES -->
+            <form [formGroup]="this.gameService.variableForm" (ngSubmit)="onSubmit()" novalidate>
+                <span *ngFor='let v of this.gameService.myVariables; let i=index;'>
+                    
+                    <input class="mr-3" type="checkbox" [value]="v.value" (change)="this.gameService.onCheckboxChange($event)"><h5>{{v.name}}</h5> 
+            
+                    <br>
+                    <br>
+                </span>
+                <input type="submit" value="Finish!">
+            </form>
+            <br>
+
+        </div>
+
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4"><img src="../../assets/images/plant.png" alt="Plant with fruit"></div>
+        <div class="col-4"></div>
+    </div>
+</div>

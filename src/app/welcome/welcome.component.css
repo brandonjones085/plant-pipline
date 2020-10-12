@@ -1,0 +1,37 @@
+@import '~bootstrap/dist/css/bootstrap.min.css'; 
+
+
+
+*, p{
+    font-family: 'arcade'
+}
+
+img{
+    width: 100%
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .container{
+        text-align: center;
+    }
+    .row{
+        text-align: center
+    }
+
+    img{
+        width: 50%
+    }
+
+    h3{
+        font-size: 15px; 
+       
+    }
+
+    p{
+        font-size: 12px;
+    }
+  }
+
+

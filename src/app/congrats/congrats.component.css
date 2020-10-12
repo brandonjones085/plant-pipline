@@ -1,0 +1,36 @@
+@import '~bootstrap/dist/css/bootstrap.min.css'; 
+
+
+
+*, p, h5{
+    font-family: 'arcade'
+}
+
+body, html{
+    background-color: blue;
+}
+
+img{
+    height: 90%; 
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+    h5{
+        font-size: 15px; 
+    }
+
+    h4{
+        font-size: 14px; 
+    }
+    p{
+        font-size: 12px; 
+    }
+    img{
+        height: 50%
+    }
+
+  }
